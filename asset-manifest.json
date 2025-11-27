@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ashokram004/yt-frontend/static/css/main.8c87a470.css",
+    "main.js": "/ashokram004/yt-frontend/static/js/main.99e3ac92.js",
+    "static/js/453.5d02575a.chunk.js": "/ashokram004/yt-frontend/static/js/453.5d02575a.chunk.js",
+    "index.html": "/ashokram004/yt-frontend/index.html",
+    "main.8c87a470.css.map": "/ashokram004/yt-frontend/static/css/main.8c87a470.css.map",
+    "main.99e3ac92.js.map": "/ashokram004/yt-frontend/static/js/main.99e3ac92.js.map",
+    "453.5d02575a.chunk.js.map": "/ashokram004/yt-frontend/static/js/453.5d02575a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c87a470.css",
+    "static/js/main.99e3ac92.js"
+  ]
+}
