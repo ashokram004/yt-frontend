@@ -1,38 +1,124 @@
-.App {
+/* Beautiful background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #eef2ff, #fafbff);
+  font-family: 'Inter', sans-serif;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+  border: 1px solid #e6e6e6;
+}
+
+/* Beautiful Gradient Title */
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-align: center;
+  background: linear-gradient(90deg, #4C8BF5, #6A5BE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.8px;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Center align EVERYTHING inside table */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Head row */
+.stats-table th {
+  padding: 14px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  background: #e9efff;
+  border-bottom: 2px solid #cdd8ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Body rows */
+.stats-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Alternating rows */
+.stats-table tbody tr:nth-child(odd) {
+  background: #f7f9ff;
+}
+
+.stats-table tbody tr:nth-child(even) {
+  background: #ffffff;
+}
+
+/* Hover row */
+.stats-table tbody tr:hover td {
+  background: #e4e8ff;
+  transition: 0.25s;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.badge.views { background: #4C8BF5; }
+.badge.likes { background: #E85C8B; }
+.badge.comments { background: #34A853; }
+
+/* Tabs container */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Single Tab */
+.tab-item {
+  padding: 10px 20px;
+  background: #e7eaff;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+  transition: 0.25s;
+}
+
+/* Active tab */
+.tab-item.active {
+  background: linear-gradient(90deg, #4C8BF5, #6A5BE8);
+  color: white;
+  box-shadow: 0 4px 10px rgba(76, 139, 245, 0.3);
+}
+
+/* Hover */
+.tab-item:not(.active):hover {
+  background: #dbe0ff;
 }
